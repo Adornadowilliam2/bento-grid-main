@@ -1,0 +1,219 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #f5f5f5;
+  --primary-color: #7651dc;
+  --secondary-color: #ffcc69;
+  --linen-color: #faeee2;
+  --thistle-color: #dcd1fc;
+  --base-white-color: #ffffff;
+  --dark-color: #dadfe6;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@font-face {
+  font-family: "DMSansVariable";
+  src: url(./assets/fonts/DMSans-VariableFont_opszwght.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DMSansVariableItalic";
+  src: url(./assets/fonts/DMSans-Italic-VariableFont_opszwght.ttf)
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.purple {
+  color: var(--primary-color);
+  font-family: "DMSansVariableItalic", sans-serif;
+}
+
+.gold {
+  color: var(--secondary-color);
+}
+
+.white {
+  color: var(--base-white-color);
+}
+
+body {
+  background: var(--bg-color);
+  font-family: "DMSansVariable", sans-serif;
+}
+
+.grid-container {
+  display: grid;
+
+  grid-template-areas:
+    "createpost social social schedule"
+    "createpost manage maintain schedule"
+    "content manage maintain schedule"
+    "content audience grow grow";
+
+  height: 100vh;
+  width: 100%;
+  gap: 20px;
+  padding: 10px;
+}
+
+.container {
+  box-shadow: 0 0 2px var(--dark-color);
+  border-radius: 10px;
+}
+
+.createpost {
+  grid-area: createpost;
+  background: var(--linen-color);
+  font-family: "DMSansVariable", sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 10px;
+}
+
+.createpost h1 {
+  width: 200px;
+}
+.createpost img {
+  max-width: 180px;
+  object-fit: cover;
+
+  margin-top: 10px;
+}
+
+img {
+  max-width: 10pc;
+}
+
+.social {
+  grid-area: social;
+  background: var(--primary-color);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 10px;
+}
+.social h1 {
+  max-width: 350px;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.schedule {
+  background: var(--thistle-color);
+  grid-area: schedule;
+
+  padding: 15px;
+}
+.schedule h1 {
+  width: 180px;
+  font-size: 25px;
+}
+.schedule img {
+  max-width: 250px;
+  height: 300px;
+}
+.schedule p {
+  width: 180px;
+}
+
+.content {
+  background: var(--secondary-color);
+  grid-area: content;
+
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.content h1 {
+  width: 200px;
+}
+.content img {
+  max-width: 200px;
+}
+.manage {
+  background: var(--base-white-color);
+  grid-area: manage;
+}
+.manage h1 {
+  width: 200px;
+  margin: 0 0 0 15px;
+}
+
+.manage img {
+  max-width: 400px;
+}
+
+.maintain {
+  background: var(--secondary-color);
+  grid-area: maintain;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
+}
+.maintain img {
+  display: block;
+  width: 90%;
+  margin-inline: auto;
+}
+.audience {
+  background: var(--base-white-color);
+  grid-area: audience;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.audience h1 {
+  font-size: 60px;
+}
+
+.grow {
+  background: var(--primary-color);
+  grid-area: grow;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.grow h1 {
+  width: 300px;
+}
+
+@media (max-width: 767px) {
+  .grid-container {
+    display: block;
+  }
+
+  .grid-container div {
+    margin: 10px 0 0 0;
+  }
+}
