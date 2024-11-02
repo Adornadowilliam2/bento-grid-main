@@ -155,6 +155,7 @@ img {
 .manage {
   background: var(--base-white-color);
   grid-area: manage;
+  padding: 10px;
 }
 .manage h1 {
   width: 200px;
@@ -215,5 +216,9 @@ img {
 
   .grid-container div {
     margin: 10px 0 0 0;
+  }
+
+  .manage img {
+    max-width: 100%;
   }
 }
