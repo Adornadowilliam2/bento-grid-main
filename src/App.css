@@ -90,6 +90,7 @@ body {
 
 .createpost h1 {
   width: 200px;
+  font-size: 30px;
 }
 .createpost img {
   max-width: 180px;
@@ -113,7 +114,7 @@ img {
 
   padding: 10px;
 }
-.social h1 {
+.social h2 {
   max-width: 350px;
   font-size: 3rem;
   text-align: center;
@@ -125,7 +126,7 @@ img {
 
   padding: 15px;
 }
-.schedule h1 {
+.schedule h2 {
   width: 180px;
   font-size: 25px;
 }
@@ -146,7 +147,7 @@ img {
   justify-content: space-evenly;
   flex-direction: column;
 }
-.content h1 {
+.content h2 {
   width: 200px;
 }
 .content img {
@@ -157,9 +158,10 @@ img {
   grid-area: manage;
   padding: 10px;
 }
-.manage h1 {
+.manage h2 {
   width: 200px;
   margin: 0 0 0 15px;
+  font-size: 30px;
 }
 
 .manage img {
@@ -191,7 +193,7 @@ img {
   gap: 10px;
 }
 
-.audience h1 {
+.audience h2 {
   font-size: 60px;
 }
 
@@ -205,8 +207,8 @@ img {
   padding: 10px;
 }
 
-.grow h1 {
-  width: 300px;
+.grow h2 {
+  width: 250px;
 }
 
 @media (max-width: 767px) {
@@ -237,7 +239,7 @@ img {
     flex-direction: column;
   }
 
-  .schedule h1 {
+  .schedule h2 {
     width: 100%;
     font-size: 20px;
     text-align: center;
@@ -251,15 +253,15 @@ img {
     text-align: center;
     width: auto;
   }
-  .manage h1 {
+  .manage h2 {
     width: auto;
     font-size: 25px;
   }
 
-  .maintain h1 {
+  .maintain h2 {
     font-size: 25px;
   }
-  .content h1 {
+  .content h2 {
     width: auto;
   }
   .grow {
@@ -273,7 +275,7 @@ img {
     padding: 10px;
   }
 
-  .grow h1 {
+  .grow h2 {
     font-size: 30px;
     text-align: center;
   }
