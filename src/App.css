@@ -211,14 +211,70 @@ img {
 
 @media (max-width: 767px) {
   .grid-container {
-    display: block;
+    grid-template-areas:
+      "social"
+      "manage"
+      "maintain"
+      "schedule"
+      "grow"
+      "audience"
+      "createpost"
+      "content";
   }
 
-  .grid-container div {
-    margin: 10px 0 0 0;
+  .createpost h1 {
+    width: auto;
   }
 
   .manage img {
     max-width: 100%;
+  }
+
+  .schedule {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .schedule h1 {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+  }
+  .schedule img {
+    max-width: 200px;
+    height: 200px;
+    margin-top: 10px;
+  }
+  .schedule p {
+    text-align: center;
+    width: auto;
+  }
+  .manage h1 {
+    width: auto;
+    font-size: 25px;
+  }
+
+  .maintain h1 {
+    font-size: 25px;
+  }
+  .content h1 {
+    width: auto;
+  }
+  .grow {
+    background: var(--primary-color);
+    grid-area: grow;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .grow h1 {
+    font-size: 30px;
+    text-align: center;
   }
 }
