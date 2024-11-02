@@ -31,7 +31,7 @@ function App() {
           <img src={graphpost} alt="illustraion graph" />
           <p>
             optimize post timings to publish content at the perfect time for
-            your audience
+            your audience.
           </p>
         </div>
         <div className="content container">
@@ -43,7 +43,7 @@ function App() {
           <h1>Manage multiple accounts and platforms.</h1>
         </div>
         <div className="maintain container">
-          <h1>Maintain a consistent posting schedule</h1>
+          <h1>Maintain a consistent posting schedule.</h1>
           <img src={calendar} alt="calendar" />
         </div>
         <div className="audience container">
